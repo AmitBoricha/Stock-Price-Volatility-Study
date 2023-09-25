@@ -1,6 +1,8 @@
 from bsedata.bse import BSE
-
+import pandas as pd
 b = BSE()
 
-q = b.getQuote('534976')
-print(q)
+
+df = pd.read_csv('Equity.csv')
+
+print(df)
